@@ -10,11 +10,11 @@ const Introduccion = () => {
   };
 
   useEffect(() => {
-    // Esta función se asegura de que MathJax procese el contenido cada vez que el componente se renderiza
+    // Asegurarse de que MathJax esté completamente cargado antes de llamar a typeset
     const processMathJax = () => {
-      if (window.MathJax) {
-        // Asegurarnos de que MathJax esté completamente cargado antes de intentar procesar el contenido
-        window.MathJax.typeset();  // Actualiza todas las fórmulas matemáticas
+      if (window.MathJax && window.MathJax.Hub) {
+        // Usamos Queue en lugar de typeset
+        window.MathJax.Hub.Queue(["Typeset", window.MathJax]);
       }
     };
 
