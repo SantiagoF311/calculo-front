@@ -13,11 +13,13 @@ const Introduccion = () => {
     // Esta función se asegura de que MathJax procese el contenido cada vez que el componente se renderiza
     const processMathJax = () => {
       if (window.MathJax) {
+        // Asegurarnos de que MathJax esté completamente cargado antes de intentar procesar el contenido
         window.MathJax.typeset();  // Actualiza todas las fórmulas matemáticas
       }
     };
 
-    processMathJax();  // Llamamos a la función al inicio para procesar el contenido
+    // Llamamos a la función al inicio para procesar el contenido
+    processMathJax();
 
     // Hacemos un efecto para actualizar las fórmulas en cada renderizado
     const interval = setInterval(processMathJax, 500);  // Revisamos cada medio segundo
@@ -81,12 +83,9 @@ const Introduccion = () => {
 
         {/* Sección: Próximos pasos */}
         <section>
-          <h3 className="text-xl font-semibold mb-4">Próximos Pasos</h3>
+          <h3 className="text-xl font-semibold mb-4">Próximos pasos</h3>
           <p className="mb-6">
-            En los siguientes apartados del curso, profundizaremos en las diferentes formas de calcular integrales, exploraremos los teoremas clave que las sustentan, y aprenderemos a resolver ejercicios prácticos que te ayudarán a comprender mejor el concepto y sus aplicaciones.
-          </p>
-          <p className="mb-6">
-            ¡Estamos listos para comenzar este viaje hacia el fascinante mundo de las integrales!
+            En la siguiente sección, profundizaremos en las propiedades de las integrales definidas y su aplicación en problemas matemáticos más complejos.
           </p>
         </section>
       </div>
