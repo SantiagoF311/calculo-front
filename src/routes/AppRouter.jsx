@@ -6,6 +6,7 @@ import Home from "../pages/Home/Home";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Integrales from "../pages/Cursos/Integrales"; // Página de Integrales
 import Quiz from "../pages/Quiz/Quiz";
+import Calculator from "../pages/Calc/Calculator";
 import ProtectedRoute from "../auth/ProtectedRoute";
 import Layout from "../layouts/Layout";
 
@@ -41,6 +42,14 @@ export default function AppRouter() {
             element={
               <ProtectedRoute>
                 <Quiz />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/calculator" // Asegúrate de usar "/*" para manejar las rutas anidadas
+            element={
+              <ProtectedRoute>
+                <Calculator />
               </ProtectedRoute>
             }
           />

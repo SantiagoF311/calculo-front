@@ -17,7 +17,7 @@ export default function Footer() {
           {/* Bloque Profesor */}
           <div className="sm:text-left">
             <h4 className="font-semibold text-xl text-gray-800 mb-2">Profesor</h4>
-            <p className="text-gray-600 text-base opacity-70">Nombre del Profesor</p>
+            <p className="text-gray-600 text-base opacity-70">David Ramirez</p>
           </div>
 
           {/* Bloque Integrantes */}
@@ -25,9 +25,9 @@ export default function Footer() {
             <h4 className="font-semibold text-xl text-gray-800 mb-2">Integrantes</h4>
             <div className="space-y-1">
               <p className="text-gray-600 text-base opacity-70">Santiago Fonseca</p>
-              <p className="text-gray-600 text-base opacity-70">Jonathan Paneso</p>
-              <p className="text-gray-600 text-base opacity-70">nanana Mojica</p>
-              <p className="text-gray-600 text-base opacity-70">Nombre Apellido 4</p>
+              <p className="text-gray-600 text-base opacity-70">Jonathan Panesso</p>
+              <p className="text-gray-600 text-base opacity-70">Jorge Mojica</p>
+              <p className="text-gray-600 text-base opacity-70">Daniel Lopez</p>
             </div>
           </div>
 
@@ -35,7 +35,7 @@ export default function Footer() {
           <div className="sm:text-left">
             <h4 className="font-semibold text-xl text-gray-800 mb-2">Redes Sociales</h4>
             <a
-              href="https://github.com"
+              href="https://github.com/SantiagoF311/calculo-front"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center text-blue-500 hover:text-blue-700 transition-colors duration-300"

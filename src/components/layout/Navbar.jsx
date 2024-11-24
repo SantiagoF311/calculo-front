@@ -72,7 +72,8 @@ export default function Navbar() {
               </Link>
               <ul className="space-y-4 mt-4">
                 <li><Link to="/integrales/introduccion" className="hover:text-blue-400" onClick={handleLinkClick}>Integrales</Link></li>
-                <li><Link to="/quiz" className="hover:text-blue-400" onClick={handleLinkClick}>quiz</Link></li>
+                <li><Link to="/quiz" className="hover:text-blue-400" onClick={handleLinkClick}>Quiz</Link></li>
+                <li><Link to="/calculator" className="hover:text-blue-400" onClick={handleLinkClick}>Calculadora</Link></li>
               </ul>
             </div>
           </div>

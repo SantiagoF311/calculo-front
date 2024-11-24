@@ -15,6 +15,8 @@
     "@react-three/fiber": "^8.17.10",
     "better-react-mathjax": "^2.0.4-beta1",
     "chart.js": "^4.4.6",
+    "mathjs": "^14.0.0",
+    "nerdamer": "^1.1.13",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
