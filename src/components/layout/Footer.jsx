@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-white text-gray-700 py-8 px-12 mt-12 border-t border-gray-200">
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-16">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
 
         {/* Logo */}
         <div className="flex justify-center sm:justify-start mb-6 sm:mb-0 lg:col-span-1">
@@ -12,8 +12,8 @@ export default function Footer() {
           />
         </div>
 
-        {/* Bloque con 3 columnas: Profesor, Integrantes, Redes Sociales */}
-        <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Bloque con 5 columnas: Profesor, Integrantes, Redes Sociales, Referencias, Tecnologías */}
+        <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Bloque Profesor */}
           <div className="sm:text-left">
             <h4 className="font-semibold text-xl text-gray-800 mb-2">Profesor</h4>
@@ -38,7 +38,7 @@ export default function Footer() {
               href="https://github.com/SantiagoF311/calculo-front"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center text-blue-500 hover:text-blue-700 transition-colors duration-300"
+              className="flex items-center text-gray-600 hover:text-black transition-colors duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -55,10 +55,86 @@ export default function Footer() {
               GitHub
             </a>
           </div>
+
+          {/* Bloque Referencias */}
+          <div className="sm:text-left">
+            <h4 className="font-semibold text-xl text-gray-800 mb-2">Referencias</h4>
+            <div className="space-y-1">
+              <p className="text-gray-600 text-base opacity-70">
+                <a
+                  href="https://www.superprof.es/apuntes/escolar/matematicas/calculo/integrales/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-black transition-colors duration-300"
+                >
+                  SuperProf
+                </a>
+              </p>
+              <p className="text-gray-600 text-base opacity-70">
+                <a
+                  href="https://www.uned.es/universidad/inicio/dam/jcr:60511774-7f5b-4022-a5e0-babc7448aa17/Tema4-Integrales-Teor%C3%ADa.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-black transition-colors duration-300"
+                >
+                  Uned
+                </a>
+              </p>
+              <p className="text-gray-600 text-base opacity-70">
+                  Cuaderno
+              </p>
+            </div>
+          </div>
+
+          <div className="sm:text-left">
+            <h4 className="font-semibold text-xl text-gray-800 mb-2">Tecnologías Usadas</h4>
+            <div className="space-y-1">
+              <p className="text-gray-600 text-base opacity-70">
+                <a
+                  href="https://reactjs.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-black transition-colors duration-300"
+                >
+                  React
+                </a>
+              </p>
+              <p className="text-gray-600 text-base opacity-70">
+                <a
+                  href="https://tailwindcss.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-black transition-colors duration-300"
+                >
+                  Tailwind CSS
+                </a>
+              </p>
+              <p className="text-gray-600 text-base opacity-70">
+                <a
+                  href="https://www.javascript.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-black transition-colors duration-300"
+                >
+                  JavaScript
+                </a>
+              </p>
+              <p className="text-gray-600 text-base opacity-70">
+                <a
+                  href="https://render.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-black transition-colors duration-300"
+                >
+                  Render
+                </a>
+              </p>
+            </div>
+          </div>
+
         </div>
 
       </div>
     </footer>
   );
 }
-
